@@ -1,0 +1,12 @@
+src/images/wash-and-fry.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/zooey-rafa.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/gypsy.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/hamachi-frances.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/petuna-jessica.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/polly.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/salvador.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/sundance-ryan.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/angel.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/edgar-beniah.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/gato-irene.jpg filter=lfs diff=lfs merge=lfs -text
+src/images/mike.jpg filter=lfs diff=lfs merge=lfs -text
