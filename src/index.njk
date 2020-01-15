@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pets of pals of Netlify</title>
+</head>
+<body>
+{% for pet in collections.pets %}
+<section class="pet">
+  <h2>{{ pet.data.name }}</h2>
+  <img src="/images/{{ pet.data.photo }}" alt="A photo of {{ pet.data.name }}" />
+</section>
+{% endfor %}
+</body>
+</html>
