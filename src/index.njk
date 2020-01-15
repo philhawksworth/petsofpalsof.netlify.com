@@ -9,7 +9,7 @@
 {%- for pet in collections.pets %}
   <section class="pet">
     <h2>{{ pet.data.name }}</h2>
-    <img src="/images/{{ pet.data.photo }}" alt="A photo of {{ pet.data.name }}" />
+    <img src="/images/{{ pet.data.photo }}?nf_resize=fit&h=100" alt="A photo of {{ pet.data.name }}" />
     <p>
       {{ pet.data.name }} is a {{ pet.data.behaves }} {{ pet.data.sex }}.
     </p>
