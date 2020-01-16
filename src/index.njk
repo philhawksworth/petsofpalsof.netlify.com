@@ -13,9 +13,14 @@ title: Pets of pals of Netlify
 
 {% block content %}
   {%- for pet in collections.pets %}
+
+
+  <p>
+    {{ paths.rootURL }}
+  </p>
   <section class="pet">
     <h2>{{ pet.data.name }}</h2>
-    <img src="https://petsofpalsof.netlify.com/images/{{ pet.data.photo }}?nf_resize=fit&h=150" alt="A photo of {{ pet.data.name }}" />
+    <img src="{{ paths.rootURL }}/{{ pet.data.photo }}?nf_resize=fit&h=150" alt="A photo of {{ pet.data.name }}" />
     <p>
       {{ pet.data.name }} is a {{ pet.data.behaves }} {{ pet.data.sex }}.
     </p>
