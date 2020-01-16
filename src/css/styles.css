@@ -1,12 +1,55 @@
+html, body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
+  text-align: left;
 }
+
+header {
+  background-color: #00363a;
+  color: #fff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+header a {
+  color: #fff;
+  text-decoration:none;
+  border-bottom: solid 1px #80a8ac;
+}
+header a:hover,
+header a:focus {
+  border-bottom-color: #fff;
+}
+
+p.subtitle {
+  color: #80a8ac;
+  font-size: 0.9em;
+  margin-bottom:2em;
+}
+
+p+p {
+  margin-top:1em;
+}
+
+main {
+  margin: 2em auto;
+}
+
 
 section.pet {
   display: inline-block;
+  padding: 1em;
 }
+
