@@ -4,16 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pets of pals of Netlify</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-{%- for pet in collections.pets %}
-  <section class="pet">
-    <h2>{{ pet.data.name }}</h2>
-    <img src="/images/{{ pet.data.photo }}?nf_resize=fit&h=100" alt="A photo of {{ pet.data.name }}" />
+  <div class="container">
+    <h1>Pets of pals of Netlify</h1>
+    <p class="subtitle">(Because it's not only <a href="https://twitter.com/philhawksworth/status/1217424233648795650">Netlifyers</a> who have these little friends)</p>
     <p>
-      {{ pet.data.name }} is a {{ pet.data.behaves }} {{ pet.data.sex }}.
+      <a href="/about">What on earth?</a> | <a href="{{ pkg.repository.url }}">Add your pet</a>
     </p>
-  </section>
-{%- endfor %}
+    {%- for pet in collections.pets %}
+    <section class="pet">
+      <h2>{{ pet.data.name }}</h2>
+      <img src="https://petsofpalsof.netlify.com/images/{{ pet.data.photo }}?nf_resize=fit&h=150" alt="A photo of {{ pet.data.name }}" />
+      <p>
+        {{ pet.data.name }} is a {{ pet.data.behaves }} {{ pet.data.sex }}.
+      </p>
+    </section>
+    {%- endfor %}
+  </div>
 </body>
 </html>
